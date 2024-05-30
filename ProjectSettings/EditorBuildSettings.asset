@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChunLiScenes/NinjaScene.unity
     guid: 2322494fc5805564e88345ec94352155
+  - enabled: 1
+    path: Assets/Scenes/AudioScenes/GameOver.unity
+    guid: ea38d5604f9a4ed4481b29d54d0e6d83
+  - enabled: 1
+    path: Assets/Scenes/AudioScenes/GamePlay.unity
+    guid: 4a2113491e9b32a45927f3c498e42848
+  - enabled: 1
+    path: Assets/Scenes/AudioScenes/MainMenu.unity
+    guid: 2c00b51e3898564499c0c2026e823dfc
   m_configObjects: {}
