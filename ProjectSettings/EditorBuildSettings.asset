@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AudioScenes/MainMenu.unity
     guid: 2c00b51e3898564499c0c2026e823dfc
+  - enabled: 1
+    path: Assets/Scenes/AudioScenes/SecondLevel.unity
+    guid: 8326e9e9fbe2c3e4fb5b84c8215e9d7e
   m_configObjects: {}

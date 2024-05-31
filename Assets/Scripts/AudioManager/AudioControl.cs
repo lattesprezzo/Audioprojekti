@@ -15,7 +15,7 @@ public class AudioControl : MonoBehaviour
 
     private void Start()
     {
-
+        audioSources[0].GetComponent<AudioSource>().Play();
        // trackNames.Add(audioSource.name);  Jos halutaan GamePlayn aikana lisätä jotain listaan 
     }
     void PauseListener()
