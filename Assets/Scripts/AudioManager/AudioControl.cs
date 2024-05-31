@@ -9,16 +9,26 @@ public class AudioControl : MonoBehaviour
     [SerializeField]
     PauseControl pauseControl;
 
-    public List<string> trackNames = new();
+    public List<string> levelNames = new();
     public GameObject[] audioSources;
 
+    void SceneChecker()
+    {
+
+        if (SceneManager.GetActiveScene().name == levelNames[0])
+        {
+            Debug.Log("Should play Crickets song");
+            audioSources[0].GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            Debug.Log("Wrong Scene!");
+        }
+    }
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "SecondLevel")
-        {
-            audioSources[0].GetComponent<AudioSource>().Play();
-        }
+
 
         // trackNames.Add(audioSource.name);  Jos halutaan GamePlayn aikana lisätä jotain listaan 
     }
@@ -37,5 +47,6 @@ public class AudioControl : MonoBehaviour
     void Update()
     {
         PauseListener();
+        SceneChecker(); 
     }
 }
