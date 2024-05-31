@@ -247,8 +247,8 @@ Camera:
   m_GameObject: {fileID: 5196443775855151710}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.11920012, g: 0.19269072, b: 0.30817598, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -335,12 +335,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &8926367281441964101
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,8 +355,6 @@ GameObject:
   - component: {fileID: 7749024632808714682}
   - component: {fileID: 7286987240642188541}
   - component: {fileID: 2023371906196363396}
-  - component: {fileID: 8824414391307524450}
-  - component: {fileID: 6836975488570793382}
   m_Layer: 0
   m_Name: Chun-Li
   m_TagString: Player
@@ -535,29 +533,3 @@ MonoBehaviour:
   bulletSpawnLocation: {fileID: 8995253991029140030}
   bulletLifeTime: 0
   maxBulletLifeTime: 1000
---- !u!114 &8824414391307524450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8926367281441964101}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf5c030e0eec84047a3d2b07970bfc65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthMinus: {fileID: 0}
---- !u!114 &6836975488570793382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8926367281441964101}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9238a484a63060948b5ddee5eb56c454, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthBarList: []
