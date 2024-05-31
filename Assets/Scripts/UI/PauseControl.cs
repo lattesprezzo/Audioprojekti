@@ -4,7 +4,6 @@ public class PauseControl : MonoBehaviour
 {
     [SerializeField]
     GameObject pausemenu;
-
     public bool gameIsPaused;
 
     public void TogglePauseMenu()
@@ -22,23 +21,12 @@ public class PauseControl : MonoBehaviour
                 pausemenu.SetActive(true);
                 Time.timeScale = 0f;
                 gameIsPaused = true;
-
             }
-
-
         }
-
     }
-
-
+    
     void Start()
     {
         pausemenu.SetActive(false);
-    }
-
-
-    void Update()
-    {
-
     }
 }

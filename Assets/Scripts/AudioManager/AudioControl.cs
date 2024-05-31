@@ -9,6 +9,15 @@ public class AudioControl : MonoBehaviour
     [SerializeField]
     PauseControl pauseControl;  
 
+    public List<string> trackNames = new();
+    public GameObject[] audioSources;
+
+
+    private void Start()
+    {
+
+       // trackNames.Add(audioSource.name);  Jos halutaan GamePlayn aikana lisätä jotain listaan 
+    }
     void PauseListener()
     {
         if(pauseControl.gameIsPaused)
